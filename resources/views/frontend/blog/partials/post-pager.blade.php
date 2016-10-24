@@ -4,14 +4,14 @@
             <li class="previous">
                 <a href="{!! $post->olderPost($tag)->url($tag) !!}">
                     <i class="fa fa-angle-left fa-lg"></i>
-                    Previous {{ $tag->tag }}
+                    @lang('post-pager.previous') {{ $tag->tag }}
                 </a>
             </li>
         @endif
         @if ($post->newerPost($tag))
             <li class="next">
                 <a href="{!! $post->newerPost($tag)->url($tag) !!}">
-                    Next {{ $tag->tag }}
+                    @lang('post-pager.next') {{ $tag->tag }}
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -21,14 +21,14 @@
             <li class="previous">
                 <a href="{!! $post->newerPost($tag)->url($tag) !!}">
                     <i class="fa fa-angle-left fa-lg"></i>
-                    Newer
+                    @lang('post-pager.newer')
                 </a>
             </li>
         @endif
         @if ($post->olderPost($tag))
             <li class="next">
                 <a href="{!! $post->olderPost($tag)->url($tag) !!}">
-                    Older
+                    @lang('post-pager.previous')
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
