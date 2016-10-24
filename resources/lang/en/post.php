@@ -15,7 +15,7 @@ return [
     */
 
     'in' => 'IN',
-    'readmore' => 'READ MORE',
+    'read-more' => 'READ MORE',
     'min-read' => 'MIN READ',
 
 ];
