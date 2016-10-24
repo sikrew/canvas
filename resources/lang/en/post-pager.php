@@ -15,5 +15,7 @@ return [
 
     'newer' => 'Newer',
     'older' => 'Older',
+    'previous' => 'Previous',
+    'next' => 'Next',
 
 ];
