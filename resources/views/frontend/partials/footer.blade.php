@@ -21,7 +21,7 @@
 
 <!-- scroll to top button -->
 <span id="top-link-block" class="hidden hover-button">
-    <a id="scroll-to-top" href="#top">SCROLL TO TOP</a>
+    <a id="scroll-to-top" href="#top">@lang("footer.scroll")</a>
 </span>
 
 @if (!empty(Settings::gaId()))
