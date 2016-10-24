@@ -1,4 +1,5 @@
 @extends('frontend.layout')
+{{Carbon\Carbon::setLocale(Config::get('app.locale'))}}
 
 @section('title')
     <title>{{ $tag->title or Settings::blogTitle() }} | Blog</title>

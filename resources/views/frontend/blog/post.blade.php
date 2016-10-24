@@ -2,6 +2,7 @@
   'title' => $post->title,
   'meta_description' => $post->meta_description ?: Settings::blogDescription(),
 ])
+{{Carbon\Carbon::setLocale(Config::get('app.locale'))}}
 
 @section('og-title')
     <meta property="og:title" content="{{ $post->title }}"/>
@@ -50,10 +51,10 @@
                     <p class="post-page-meta">
                         {{ \Carbon\Carbon::parse($post->published_at)->diffForHumans() }}
                         @if ($post->tags->count())
-                            in
+                            @lang('post.in')
                             {!! join(', ', $post->tagLinks()) !!}
                         @endif
-                        &#183; {{ $post->readingTime() }} MIN READ
+                        &#183; {{ $post->readingTime() }} @lang('post.min-read')
                     </p>
                     <h1 class="post-page-title">{{ $post->title }}</h1>
 
