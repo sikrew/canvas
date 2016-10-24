@@ -28,7 +28,7 @@
         @if ($post->olderPost($tag))
             <li class="next">
                 <a href="{!! $post->olderPost($tag)->url($tag) !!}">
-                    @lang('post-pager.previous')
+                    @lang('post-pager.older')
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
